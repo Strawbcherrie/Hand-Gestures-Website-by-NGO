@@ -1,0 +1,69 @@
+
+<html>
+    <head>
+        <title>Project-110</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="background: lightpink;">
+        <center>
+        <h1 style="color:lawngreen; background-color:blueviolet; width: 1000px;">Hand Gestures WebApp
+            <br>
+            &nbsp;
+            <span>&#9994;</span>
+            &nbsp;&nbsp;
+            <span>&#9996;</span>
+            &nbsp;&nbsp;
+            <span>&#128079;</span>
+            &nbsp;&nbsp;&nbsp;
+            <span>&#9997;</span>
+            &nbsp;&nbsp;
+            <span>&#129304;</span>
+            &nbsp;&nbsp;
+            <span>&#128076;</span>
+            
+
+            <div class="d">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Help &nbsp; Peace&nbsp; Clapping&nbsp; Writing&nbsp; Well&nbsp; Okay </div>
+            
+        </h1>
+
+
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label style="width: 150px;">Webcam View : </label>
+            <div id="camera" ></div>
+            <br>
+            <button class="text-danger text-capitalize btn btn-warning" onclick="snapshot()">Take Snapshot</button>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+    <span>
+        <label>Prediction - </label>
+    <h4 id="lbl_name">The hand gesture signifies : _____</h4>
+    <h4 id="lbl_confidence">The confidence or accuracy of the hand gesture is _____</h4>
+    </span>
+</div>
+        
+<br>
+        
+
+        
+
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Snapshot :</label>
+            <div id="result" ></div>
+            <br>
+            <button  onclick="check()" class="text-info text-capitalize btn "  id="predict_gesture_btn" style="background: rgb(92, 253, 92);">predict gesture</button>
+        </div>
+    </center>
+    <script src="main.js"></script>
+    </body>
+</html>

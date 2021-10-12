@@ -1,0 +1,26 @@
+#camera{
+    width: 300px;
+    height: 300px;
+    border: dashed black;
+}
+#result{
+    width: 300px;
+    border: solid black;
+}
+
+span{
+    font-size: 30px;
+}
+
+.d{
+    font-size: 20px;
+    color: cyan;
+}
+label{
+    background-color: white;
+    color: purple;
+    border-radius: 15px;
+    height: 30px;
+    width: 140px;
+    font-size: 20px;
+}
